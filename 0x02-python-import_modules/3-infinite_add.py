@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 import sys
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     result = 0
+    args = sys.argv
+    argc = len(args)
 
-    for i in range(len(sys.argv) - 1):
-        result += int(sys.argv[i + 1])
-    print("{}".format(result))
+    for i in range(1, argc):
+        result += int(args[i])
+
+    print(result)

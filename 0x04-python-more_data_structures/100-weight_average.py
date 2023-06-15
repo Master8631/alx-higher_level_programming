@@ -11,4 +11,4 @@ def weight_average(my_list=[]):
         wavg_num += entry[0] * entry[1]
         wavg_den += entry[1]
 
-    return wavg_num / wavg_den
+    return (wavg_num / wavg_den)
